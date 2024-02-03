@@ -1,6 +1,6 @@
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, ol, li {
-  margin: 0;
+  margin: 10;
   padding: 0;
 }
 
@@ -25,12 +25,13 @@ header {
   padding: 40px 0;
 }
 
-header h1 {
+h1 {
+  text-align: center;
   font-size: 3em;
-  color: #2c3e50;
+  color: #9acfd4;
 }
 
-header p {
+p {
   font-size: 1.2em;
   color: #7f8c8d;
 }
@@ -40,17 +41,17 @@ nav {
   margin-top: 20px;
 }
 
-nav ul {
+ul {
   list-style-type: none;
   text-align: center;
 }
 
-nav li {
+li {
   display: inline-block;
   margin-right: 20px;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: #f0f5f9;
   font-weight: bold;
@@ -58,7 +59,7 @@ nav a {
   transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+a:hover {
   color: #f3f6f9;
 }
 
@@ -67,13 +68,13 @@ section {
   margin-top: 40px;
 }
 
-section h2 {
+h2 {
   font-size: 2.5em;
   color: #2c3e50;
   margin-bottom: 20px;
 }
 
-section p {
+p {
   font-size: 1.2em;
   color: #7f8c8d;
 }
@@ -88,24 +89,24 @@ footer {
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {
-  header h1 {
+  h1 {
     font-size: 2.5em;
   }
 
-  header p {
+  p {
     font-size: 1em;
   }
 
-  nav li {
+  li {
     display: block;
     margin-bottom: 10px;
   }
 
-  section h2 {
+  h2 {
     font-size: 2em;
   }
 
-  section p {
+  p {
     font-size: 1em;
   }
   /* Style unordered lists */
