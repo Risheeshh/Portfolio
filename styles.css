@@ -1,25 +1,159 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Birthday Invite</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <h1>My Birthday Mine All Mine</h1>
-        <hr />
-        <p>Idk when but keep your calendars clear around</p>
-        <h4>9 July</h4>
-        <img src="https://i.pinimg.com/736x/9d/1c/1c/9d1c1cd1420ccb672fdab70061b404ba.jpg" height="200"alt="A purple double layered birthday cake"/>
-        <h3>What To Bring:</h3>
-        <ul>
-            <li>A date ffs</li>
-            <li>A bottle of white label</li>
-            <li>.44 revolver</li>
-            <li>An appetite cuz theres defo gonna be food</li>
-        </ul>
-        <h3>Lets start with where to go shall we 😏</h3>
-        <a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,75y,289.6h,87.01t,0.72r/data=!3m6!1e1!3m4!1sgT28ssf0BB2LxZ63JNcL1w!2e0!7i13312!8i6656"><img src="https://www.shutterstock.com/image-vector/click-here-button-arrow-clicking-260nw-1688204716.jpg" width="400" height="200" alt="A Click here button"/></a>
-        <hr />
-    </body>    
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
 
-</html>
+/* Set background color and font styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2e3233;
+  color: #9cd0d2;
+  line-height: 1.6;
+}
+
+/* Container to center the content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/* Navigation menu */
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f5f9;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #f3f6f9;
+}
+
+/* Main content styles */
+section {
+  margin-top: 40px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #99b0c6;
+  color: #ecf0f1;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  section h2 {
+    font-size: 2em;
+  }
+
+  section p {
+    font-size: 1em;
+  }
+  /* Style unordered lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li:before {
+  content: "\2022"; /* Unicode character for a solid circle */
+  color: #8e9193; /* Set the color of the bullet */
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px; /* Adjust the spacing between the bullet and text */
+}
+
+/* Style ordered lists */
+ol {
+  list-style-type: none;
+  counter-reset: my-counter; /* Reset the counter for ordered lists */
+  padding: 0;
+}
+
+ol li {
+  margin-bottom: 8px;
+  padding-left: 30px;
+  position: relative;
+}
+
+ol li:before {
+  content: counter(my-counter); /* Use the counter value as the content */
+  counter-increment: my-counter; /* Increment the counter for each item */
+  color: #b0b5b9; /* Set the color of the number */
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px; /* Adjust the spacing between the number and text */
+}
+
+}
