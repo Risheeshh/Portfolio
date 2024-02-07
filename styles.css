@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, ol, li {
+body, h1, h2, h3, h4, p, ul, ol, li {
   margin: 10;
   padding: 0;
 }
@@ -22,18 +22,19 @@ body {
 /* Header styles */
 header {
   text-align: center;
+  font-size: 2em;
   padding: 40px 0;
+  color:#2c3e50;
 }
 
-h1 {
+h4{
   text-align: center;
-  font-size: 3em;
-  color: #9acfd4;
+  font-size: 1em;
+  color: #2ef0af;
 }
-
-p {
-  font-size: 1.2em;
-  color: #7f8c8d;
+h3{
+  font-size: 1em;
+  color: #e9eaa1;
 }
 
 /* Navigation menu */
@@ -60,12 +61,13 @@ a {
 }
 
 a:hover {
-  color: #f3f6f9;
+  color: #3bb8c3;
 }
 
 /* Main content styles */
-section {
+.section1 {
   margin-top: 40px;
+  background-color:#e9eaa1 ;
 }
 
 h2 {
@@ -110,51 +112,51 @@ footer {
     font-size: 1em;
   }
   /* Style unordered lists */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  ul {
+    list-style-type:none;
+    padding: 0;
+  }
 
-ul li {
-  margin-bottom: 8px;
-  padding-left: 20px;
-  position: relative;
-}
+  ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position:relative;
+  }
 
-ul li:before {
-  content: "\2022"; /* Unicode character for a solid circle */
-  color: #8e9193; /* Set the color of the bullet */
-  font-size: 1.2em;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-right: 10px; /* Adjust the spacing between the bullet and text */
-}
+  ul li:before {
+    content: "\2022"; /* Unicode character for a solid circle */
+    color: #8e9193; /* Set the color of the bullet */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px; /* Adjust the spacing between the bullet and text */
+  }
 
-/* Style ordered lists */
-ol {
-  list-style-type: none;
-  counter-reset: my-counter; /* Reset the counter for ordered lists */
-  padding: 0;
-}
+  /* Style ordered lists */
+  ol {
+    list-style-type: none;
+    counter-reset: my-counter; /* Reset the counter for ordered lists */
+    padding: 0;
+  }
 
-ol li {
-  margin-bottom: 8px;
-  padding-left: 30px;
-  position: relative;
-}
+  ol li {
+    margin-bottom: 8px;
+    padding-left: 30px;
+    position: relative;
+  }
 
-ol li:before {
-  content: counter(my-counter); /* Use the counter value as the content */
-  counter-increment: my-counter; /* Increment the counter for each item */
-  color: #b0b5b9; /* Set the color of the number */
-  font-size: 1.2em;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-right: 10px; /* Adjust the spacing between the number and text */
-}
+  ol li:before {
+    content: counter(my-counter); /* Use the counter value as the content */
+    counter-increment: my-counter; /* Increment the counter for each item */
+    color: #b0b5b9; /* Set the color of the number */
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px; /* Adjust the spacing between the number and text */
+  }
 
 }
