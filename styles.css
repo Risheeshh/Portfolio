@@ -3,7 +3,25 @@ body, h1, h2, h3, h4, p, ul, ol, li {
   margin: 10;
   padding: 0;
 }
-
+/*My settings*/
+.center-align{
+  text-align: center;
+}
+.section1 {
+  margin-top: 40px;
+  /*background-color:#e9eaa1*/ ;
+  background-image: url(https://e0.pxfuel.com/wallpapers/512/581/desktop-wallpaper-visually-stunning-minimalist-paintings-characterized-by-clean-geometric-shapes-l-iphone-background-cute-patterns-abstract-iphone-color-minimalist.jpg);
+  background-size: cove;
+}
+.section2{
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/375/757/desktop-wallpaper-minimalist-black-pattern-i-ultra-backgrounds-minimalist-dark-1920x1080.jpg);
+  background-size:cover;
+  padding: 100px;
+}
+.section3{
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/375/757/desktop-wallpaper-minimalist-black-pattern-i-ultra-backgrounds-minimalist-dark-1920x1080.jpg);
+  background-size: cover;
+}
 /* Set background color and font styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,13 +42,15 @@ header {
   text-align: center;
   font-size: 2em;
   padding: 40px 0;
-  color:#2c3e50;
+  color:#242425;
+  ;
 }
 
 h4{
   text-align: center;
-  font-size: 1em;
-  color: #adf6e5;
+  font-size: 1.5em;
+  color: #e9eaa1;
+  order: 5px solid;
 }
 h3{
   font-size: 1em;
@@ -53,12 +73,12 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none;
   color: #f0f5f9;
-  font-weight: bold;
-  font-size: 1.2em;
+  font-weight:lighter;
+  font-size: 1em;
   transition: color 0.3s ease-in-out;
-  padding: 5px;
+  padding: 5px
 }
 
 a:hover {
@@ -66,10 +86,7 @@ a:hover {
 }
 
 /* Main content styles */
-.section1 {
-  margin-top: 40px;
-  background-color:#e9eaa1 ;
-}
+
 
 h2 {
   font-size: 2.5em;
