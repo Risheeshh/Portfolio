@@ -11,7 +11,7 @@ body, h1, h2, h3, h4, p, ul, ol, li {
   margin-top: 40px;
   /*background-color:#e9eaa1*/ ;
   background-image: url(https://e0.pxfuel.com/wallpapers/512/581/desktop-wallpaper-visually-stunning-minimalist-paintings-characterized-by-clean-geometric-shapes-l-iphone-background-cute-patterns-abstract-iphone-color-minimalist.jpg);
-  background-size: cove;
+  background-size: cover;
 }
 .section2{
   background-image: url(https://e1.pxfuel.com/desktop-wallpaper/375/757/desktop-wallpaper-minimalist-black-pattern-i-ultra-backgrounds-minimalist-dark-1920x1080.jpg);
